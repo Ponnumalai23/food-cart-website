@@ -1,0 +1,168 @@
+body {
+    background-color: bisque;
+}
+
+#header>h3 {
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: green;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#container {
+    width: 100%;
+    margin-top: 0px;
+}
+
+#header {
+    width: 100%;
+    background-color: aquamarine;
+    height: 70px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: lightblue;
+    height: 70px;
+    margin-top: 5px;
+}
+
+ul,
+li {
+    padding-top: 5px;
+    list-style: none;
+    float: left;
+    color: red;
+    margin-left: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+li:hover {
+    color: black;
+}
+
+#main-content {
+    display: flex;
+    align-content: space-between;
+    height: 600px;
+    width: 100%;
+    background-color: darkkhaki;
+    margin-top: 5px;
+    overflow: scroll;
+    flex-wrap: wrap;
+}
+
+#cart-img {
+    margin-top: 20px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.end {
+    background-color: 100px;
+    margin-left: 900px;
+    padding: 10px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+    margin-left: 15px;
+    background-color: aliceblue;
+    margin-top: 40px;
+}
+
+.product img {
+    max-width: 135px;
+    height: auto;
+    object-fit: cover;
+}
+
+button {
+    color: antiquewhite;
+    padding: 5px 10px;
+    margin-top: -5px;
+    cursor: pointer;
+    background-color: #28a754;
+    border: none;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -380px;
+    width: 350px;
+    height: 600px;
+    background-color: white;
+    color: rgb(12, 12, 12);
+    transition: right 0.3s ease;
+    padding: 20px;
+    overflow-y: auto;
+    margin-top: 28px;
+}
+
+#sidebar.open {
+    right: 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid#1f1e1e;
+}
+
+.cart-item img {
+    margin-right: 10px;
+}
+
+.cart-item span {
+    margin-right: 10px;
+    color: black;
+}
+
+.box {
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    background-color: #2f3542;
+    right: 160;
+    padding: 3px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    z-index: 99;
+    margin-left: 920px;
+    top: 5px;
+}
+
+#cart-icon {
+    float: left;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-top: 20px;
+    margin-left: 900px;
+}
+
+#close-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
